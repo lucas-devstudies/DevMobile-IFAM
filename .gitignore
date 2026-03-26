@@ -1,38 +1,30 @@
-# Dependências
+# Dependências (A pasta mais pesada)
 node_modules/
+
+# Expo e Metro
 .expo/
 dist/
+web-build/
 
-# Android
-android/app/build/
-android/.gradle/
-*.iml
-*.apk
-*.keystore
-!debug.keystore
-
-# iOS
-ios/build/
-ios/Pods/
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata/
-DerivedData/
-*.moved-aside
-
-# Logs e Cache
+# Cache e Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .eslintcache
 
-# Configurações locais/Segredo
+# Configurações Locais do Windows e VS Code
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Variáveis de Ambiente (Segurança!)
 .env
 .env.local
-.vscode/
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Builds Nativas (Caso você use prebuild no futuro)
+android/
+ios/
